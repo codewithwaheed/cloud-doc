@@ -1,0 +1,442 @@
+/* landing Slider */
+.landingSlider {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../../assets//images/landingBg.png);
+  width: 100%;
+  height: 480px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.landingSlider .title {
+  font: 24px poppinsBd;
+  margin-top: 10px;
+}
+.landingSlider .mainInputDiv {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.landingSlider .inputDiv {
+  display: flex;
+  border-bottom: 1px solid #c7c7c7;
+  padding: 10px 0;
+}
+.landingSlider .inputDiv .iconM {
+  width: 15px;
+  margin-right: 10px;
+}
+.landingSlider .inputDiv .inputM {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.mainInputDiv .searchBtnM {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #afeaaa;
+  padding: 15px;
+  font: 20px poppinsSb;
+  margin-top: 20px;
+}
+.landingSlider .mainSearchDiv {
+  background-color: #fff;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  margin-top: 20px;
+}
+.landingSlider .mainSearchDiv .searchSec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.mainSearchDiv .searchSec .inputDivD {
+  display: flex;
+  align-items: center;
+}
+.mainSearchDiv .searchSec .inputDivD .input {
+  border: none;
+  width: 220px;
+}
+.mainSearchDiv .searchSec .inputDivD .icon {
+  width: 20px;
+  margin-right: 10px;
+}
+.mainSearchDiv .searchBtn {
+  background-color: #afeaaa;
+  border: none;
+  padding: 0 30px;
+  font: 23px poppinsMd;
+}
+.mainSearchDiv .divider {
+  width: 2px;
+  height: 60%;
+  background-color: #c7c7c7;
+  border-radius: 2px;
+}
+
+/* choose doc css */
+.chooseDoctor .mainFlex {
+  display: flex;
+  justify-content: space-around;
+
+  height: fit-content;
+}
+.chooseDoctor .mainFlex .doctorCard {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(175, 234, 170, 0.45);
+  border-radius: 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  min-height: 100%;
+  margin-right: 10px;
+  flex-wrap: wrap;
+}
+.mainFlex .doctorCard .docImg {
+  width: 100%;
+}
+.mainFlex .doctorCard .content {
+  padding: 0 8px;
+}
+.mainFlex .doctorCard .title {
+  font: 15px poppinsSb;
+}
+.mainFlex .doctorCard .text {
+  font: 12px poppinsMd;
+  max-width: 220px;
+}
+.mainFlex .doctorCard .btnBook {
+  padding: 8px 0;
+  font: 10px poppinsSb;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+/* mediacl spec css */
+.basicLandingTitle {
+  font: 25px poppinsBd;
+}
+.medicalSpec .itemFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+.medicalSpec .itemFlex .item {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+.medicalSpec .itemFlex .item .circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: var(--primaryBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.medicalSpec .itemFlex .item .title {
+  font: 20px poppinsSb;
+  color: #48afc9;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* steps sec css */
+.stepsSec .secTitle {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.stepsSec .stepFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  margin-bottom: 50px;
+}
+.stepFlex .contentSec .countCircle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--primaryBlue);
+  font: 20px poppinsSb;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stepFlex .contentSec .title {
+  font: 20px poppinsSb;
+  margin: 10px 0;
+}
+.stepFlex .contentSec .text {
+  font: 15px poppins;
+  color: #00234b;
+}
+.stepFlex .contentSec .seeBtn {
+  background-color: transparent;
+  border: 1px solid var(--primaryBlue);
+  border-radius: 5px;
+  color: var(--primaryBlue);
+  margin-top: 40px;
+}
+.stepFlex .contentSec .seeBtn:hover {
+  background-color: var(--primaryBlue);
+  color: #fff;
+}
+.stepFlex .imgSec .img {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.flexReverse {
+  flex-direction: column-reverse;
+}
+.stepsSec .lineImg {
+  width: 67%;
+}
+.medicalSpec .seeAllBtn {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #000;
+  font: 14px poppinsSb;
+}
+.medicalSpec .seeAllBtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.stepsSec {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.providerSec {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.providerSec .title {
+  text-align: center;
+  font: 20px poppinsMd;
+}
+.providerSec .img {
+  width: 120px;
+}
+.providerSec .providerSlider {
+  margin-top: 60px;
+}
+.carouselContainerProvider {
+  display: flex;
+  align-items: center;
+}
+
+/* fiveStar sec css */
+.fiveStarPage {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.fiveStarPage .mainFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.fiveStarPage .mainFlex .contentSec {
+  margin-bottom: 20px;
+  max-width: 600px;
+  min-width: 300px;
+}
+.fiveStarPage .mainFlex .contentSec .titleSub {
+  font: 20px poppinsMd;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #00234b;
+}
+.fiveStarPage .mainFlex .contentSec .point {
+  font: 15px poppinsMd;
+  color: #00234b;
+  padding-left: 20px;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.fiveStarPage .mainFlex .contentSec .pointCircle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #afeaaa;
+  margin-right: 20px;
+}
+.fiveStarPage .mainFlex .contentSec .btnJoin {
+  background-color: #6bcae2;
+  color: #fff;
+  margin-top: 30px;
+}
+.fiveStarPage .img {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* patient review sec */
+.patientReviewBg {
+  background-color: #6bcae2;
+}
+.patientReview {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.patientReview .patientReviewFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.patientReviewFlex .titleSec {
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.patientReviewFlex .sliderSec {
+  max-width: 700px;
+  width: 100%;
+}
+.patientReviewFlex .titleSec .text {
+  font: 23px poppinsMd;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.patientReviewCard {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px 20px;
+  width: 380px;
+  min-height: 300px;
+  margin-right: 20px;
+}
+.patientReviewCard .message {
+  font: 18px poppinsBd;
+  color: #5d738c;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.patientReviewCard .divider {
+  height: 2px;
+  width: 15px;
+  background-color: #00234b;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+.patientReviewCard .authorText {
+  font: 18px poppinsMd;
+  color: #00234b;
+}
+.reviewStar {
+  width: 30px;
+  height: 28px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+.stepFlex .imgSec .img {
+  width: 300px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .landingSlider .title {
+    font: 50px poppinsBd;
+    padding-right: 40vw;
+  }
+  .chooseDoctor .mainFlex .doctorCard {
+    flex-direction: row;
+  }
+  .mainFlex .doctorCard .docImg {
+    width: 160px;
+  }
+
+  .mainFlex .doctorCard .content {
+    padding: 0 20px;
+  }
+  .mainFlex .doctorCard .title {
+    font: 20px poppinsSb;
+  }
+  .mainFlex .doctorCard .text {
+    font: 15px poppinsMd;
+  }
+  .mainFlex .doctorCard .btnBook {
+    padding: 15px 0;
+    font: 15px poppinsSb;
+  }
+
+  .basicLandingTitle {
+    font: 40px poppinsBd;
+  }
+  .stepFlex .contentSec {
+    flex: 0.8;
+  }
+  .stepFlex .imgSec .img {
+    width: 400px;
+    margin-top: 0;
+  }
+  .stepFlex .contentSec .title {
+    font: 25px poppinsSb;
+  }
+  .stepFlex .contentSec .text {
+    font: 18px poppins;
+  }
+  .stepFlex .contentSec .seeBtn {
+    font-size: 15px;
+    margin-top: 40px;
+  }
+  .flexReverse {
+    flex-direction: row;
+  }
+  .stepsSec .stepFlex {
+    margin-bottom: 0;
+  }
+  .fiveStarPage .contentSec {
+    flex: 1;
+  }
+  .fiveStarPage .img {
+    max-width: 500px;
+  }
+  .fiveStarPage .mainFlex .contentSec .btnJoin {
+    font: 18px poppinsSb;
+  }
+  .patientReviewFlex .sliderSec {
+    max-width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .patientReviewFlex .sliderSec {
+    max-width: 700px;
+    width: 100%;
+  }
+}
