@@ -1,17 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import HeaderSideBar from "./HeaderSideBar";
-export default function Header() {
+import { withRouter } from "react-router-dom";
+function Header(props) {
+  // sideBar state
   const [active, setHandleActive] = useState(false);
+  // const transparent Bg state
+  const [transparent, setTransparent] = useState(false);
+  // path name value
+  const { location } = props;
+  const path = location.pathname;
 
   //   close sideBar
   const closeSideBar = () => {
     setHandleActive(false);
   };
 
+  // check if the path changes then transparent navBar
+  useEffect(() => {
+    if (path === "/") {
+      setTransparent(true);
+      document.addEventListener("scroll", () => {
+        var scrollValue = window.scrollY;
+
+        if (scrollValue > 100) setTransparent(false);
+        else setTransparent(true);
+      });
+    }
+    return () => {
+      setTransparent(false);
+    };
+  }, []);
+
   //   main return
   return (
     <div>
-      <nav className="navbar navbar-expand-md navbar-transparent bg-transparent">
+      <nav
+        className={
+          transparent === true
+            ? "navbar navbar-expand-md navbar-light bg-transparent"
+            : "navbar navbar-expand-md navbar-light bg-navColor"
+        }
+      >
         <a className="navbar-brand" href="#">
           <img src="/images/logoWhite.png" className="logo" alt="logo"></img>{" "}
           <img
@@ -68,3 +97,4 @@ export default function Header() {
     </div>
   );
 }
+export default withRouter(Header);

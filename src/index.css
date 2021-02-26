@@ -119,6 +119,9 @@ button:focus {
   font: 14px poppinsMd;
   margin-left: 20px;
 }
+.bg-navColor {
+  background-color: var(--primaryBlue);
+}
 
 /* Button Css */
 .navaBarButton {
