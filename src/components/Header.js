@@ -43,14 +43,11 @@ function Header(props) {
       >
         <a className="navbar-brand" href="#">
           <img src="/images/logoWhite.png" className="logo" alt="logo"></img>{" "}
-          <img
-            src="/images/logoWhiteText.png"
-            className="logoText d-none d-sm-inline"
-            alt="logo"
-          ></img>{" "}
         </a>
         {/* HeaderSideBar Component*/}
-        <HeaderSideBar activeSideBar={active} closeSideBar={closeSideBar} />
+        <div className=" d-inline d-md-none">
+          <HeaderSideBar activeSideBar={active} closeSideBar={closeSideBar} />
+        </div>
 
         {/* SideBarButton */}
         <div className="d-inline d-md-none">

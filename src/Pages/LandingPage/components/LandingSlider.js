@@ -24,7 +24,7 @@ export default function LandingSlider(props) {
                 placeholder="Conditions, Procedures, Doctors"
               ></input>
             </div>
-            <div className="inputDiv">
+            <div className="inputDiv pt-4">
               <div>
                 <img
                   className="iconM"
@@ -33,7 +33,7 @@ export default function LandingSlider(props) {
                 ></img>
               </div>
               <input
-                className="inputM"
+                className="inputM "
                 placeholder="City, State or Zip Code"
               ></input>
             </div>

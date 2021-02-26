@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ChooseDoctor() {
   return (
-    <div className=" basicLandingRow chooseDoctor">
+    <div className=" basicLandingRow chooseDoctor ">
       <div className="mainFlex">
         <div className="doctorCard">
           <img
@@ -16,12 +16,12 @@ export default function ChooseDoctor() {
               Video Consultations with Top Specialists in{" "}
               <span className="poppinsSb">Rs. 500</span>
             </div>
-            <button className="btnBook blueBg mt-4 mt-md-2">
+            <button className="btnBook blueBg mt-4 mt-sm-2">
               Book an Appointment
             </button>
           </div>
         </div>
-        <div className="doctorCard">
+        <div className="doctorCard mr-0">
           <img
             src="/images/onlineDoc.png"
             alt="cloudDoctor"

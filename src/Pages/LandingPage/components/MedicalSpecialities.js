@@ -34,7 +34,7 @@ export default function MedicalSpecialities() {
         <div className="flexBetweenCenter">
           <div className="basicLandingTitle mb-0">Medical Specialities</div>
           <button className="primaryBtn seeAllBtn d-none d-md-inline">
-            See All
+            See all specialities
           </button>
         </div>
         <div className="itemFlex">
@@ -52,7 +52,7 @@ export default function MedicalSpecialities() {
         </div>
         <div className="centerDiv mb-5">
           <button className="primaryBtn seeAllBtn d-inline d-md-none">
-            See All
+            See all specialities
           </button>
         </div>
       </div>

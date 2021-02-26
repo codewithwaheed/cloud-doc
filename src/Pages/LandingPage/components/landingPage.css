@@ -5,7 +5,7 @@
   background-size: cover;
   background-image: url(../../../assets//images/landingBg.png);
   width: 100%;
-  height: 480px;
+  height: 430px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -40,14 +40,14 @@
   border: none;
   border-radius: 5px;
   background-color: #afeaaa;
-  padding: 15px;
-  font: 20px poppinsSb;
-  margin-top: 20px;
+  padding: 12px;
+  font: 15px poppinsSb;
+  margin-top: 25px;
 }
 .landingSlider .mainSearchDiv {
   background-color: #fff;
   display: flex;
-  height: 80px;
+  height: 60px;
   width: 100%;
   margin-top: 20px;
 }
@@ -73,7 +73,7 @@
   background-color: #afeaaa;
   border: none;
   padding: 0 30px;
-  font: 23px poppinsMd;
+  font: 18px poppinsMd;
 }
 .mainSearchDiv .divider {
   width: 2px;
@@ -83,6 +83,10 @@
 }
 
 /* choose doc css */
+.chooseDoctor {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .chooseDoctor .mainFlex {
   display: flex;
   justify-content: space-around;
@@ -97,7 +101,7 @@
   flex-direction: column;
   margin-bottom: 20px;
   min-height: 100%;
-  margin-right: 10px;
+  margin-right: 15px;
   flex-wrap: wrap;
 }
 .mainFlex .doctorCard .docImg {
@@ -114,7 +118,7 @@
   max-width: 220px;
 }
 .mainFlex .doctorCard .btnBook {
-  padding: 8px 0;
+  padding: 8px 5px;
   font: 10px poppinsSb;
   border: none;
   border-radius: 5px;
@@ -218,13 +222,13 @@
 }
 .medicalSpec .seeAllBtn {
   background-color: transparent;
-  border: 1px solid #000;
+  border: 1px solid var(--primaryBlue);
   border-radius: 5px;
-  color: #000;
+  color: var(--primaryBlue);
   font: 14px poppinsSb;
 }
 .medicalSpec .seeAllBtn:hover {
-  background-color: #000;
+  background-color: var(--primaryBlue);
   color: #fff;
 }
 .stepsSec {
@@ -292,7 +296,8 @@
 .fiveStarPage .mainFlex .contentSec .btnJoin {
   background-color: #6bcae2;
   color: #fff;
-  margin-top: 30px;
+  margin-top: 50px;
+  font: 18px poppinsSb;
 }
 .fiveStarPage .img {
   max-width: 400px;
@@ -370,8 +375,9 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .landingSlider .title {
-    font: 50px poppinsBd;
+    font: 45px poppinsBd;
     padding-right: 40vw;
+    line-height: 1.1;
   }
   .chooseDoctor .mainFlex .doctorCard {
     flex-direction: row;
@@ -417,6 +423,9 @@
   .flexReverse {
     flex-direction: row;
   }
+  .fiveStarPage .mainFlex .contentSec .btnJoin {
+    margin-top: 30px;
+  }
   .stepsSec .stepFlex {
     margin-bottom: 0;
   }
@@ -425,9 +434,6 @@
   }
   .fiveStarPage .img {
     max-width: 500px;
-  }
-  .fiveStarPage .mainFlex .contentSec .btnJoin {
-    font: 18px poppinsSb;
   }
   .patientReviewFlex .sliderSec {
     max-width: 100%;

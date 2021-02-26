@@ -100,7 +100,7 @@ button:focus {
   padding-right: 5vw;
 }
 .navbar .logo {
-  width: 80px;
+  width: 180px;
 }
 .navbar .logoText {
   width: 200px;
@@ -201,7 +201,7 @@ button:focus {
   text-align: center;
 }
 .sideBarItemDiv {
-  padding: 15vw 10vw;
+  padding: 24vw 10vw;
 }
 .headerSideBar .btnSignUp {
   width: 100%;
@@ -312,6 +312,9 @@ button:focus {
   .mobileCenter {
     width: fit-content;
     margin: 0;
+  }
+  .navbar .logo {
+    width: 240px;
   }
 }
 
