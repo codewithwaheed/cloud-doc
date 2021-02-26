@@ -34,7 +34,7 @@ export default function LandingSlider(props) {
           // keyBoardControl={true}
           // customTransition="all .5"
           draggable={false}
-          transitionDuration={300}
+          transitionDuration={500}
           //   containerClass="carouselContainerProvider"
           // customLeftArrow={<CustomLeftArrow />}
           // customRightArrow={<CustomRightArrow />}
@@ -46,21 +46,6 @@ export default function LandingSlider(props) {
           <div className="landingSliderImg"></div>
           <div className="landingSliderImg"></div>
           <div className="landingSliderImg"></div>
-          {/* <img
-            src="/images/landingBg.png"
-            className="landingSliderImg"
-            alt="landingSliderImg"
-          ></img>
-          <img
-            src="/images/landingBg.png"
-            className="landingSliderImg"
-            alt="landingSliderImg"
-          ></img>
-          <img
-            src="/images/landingBg.png"
-            className="landingSliderImg"
-            alt="landingSliderImg"
-          ></img> */}
         </Carousel>
       </div>
       <div className="landingSlider ">
