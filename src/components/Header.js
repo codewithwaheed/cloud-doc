@@ -42,7 +42,11 @@ function Header(props) {
         }
       >
         <a className="navbar-brand" href="#">
-          <img src="/images/logoWhite.png" className="logo" alt="logo"></img>{" "}
+          <img
+            src={transparent ? "/images/logoWhite.png" : "/images/logoBlue.png"}
+            className="logo"
+            alt="logo"
+          ></img>{" "}
         </a>
         {/* HeaderSideBar Component*/}
         <div className=" d-inline d-md-none">
@@ -57,30 +61,60 @@ function Header(props) {
               active ? " navaBarButton activeSideBar " : "navaBarButton"
             }
           >
-            <div className="navBarLine navBarLine1"></div>
-            <div className="navBarLine navBarLine2"></div>
-            <div className="navBarLine navBarLine3"></div>
+            <div
+              className={
+                transparent
+                  ? "navBarLine navBarLineActive navBarLine1"
+                  : "navBarLine navBarLine1"
+              }
+            ></div>
+            <div
+              className={
+                transparent
+                  ? "navBarLine navBarLineActive navBarLine2"
+                  : "navBarLine navBarLine2"
+              }
+            ></div>
+            <div
+              className={
+                transparent
+                  ? "navBarLine navBarLineActive navBarLine3"
+                  : "navBarLine navBarLine3"
+              }
+            ></div>
           </div>
         </div>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a
+                className={transparent ? "nav-link textWhite" : "nav-link"}
+                href="#"
+              >
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a
+                className={transparent ? "nav-link textWhite" : "nav-link"}
+                href="#"
+              >
                 About Us
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a
+                className={transparent ? "nav-link textWhite" : "nav-link"}
+                href="#"
+              >
                 Doctors
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a
+                className={transparent ? "nav-link textWhite" : "nav-link"}
+                href="#"
+              >
                 Contact Us
               </a>
             </li>

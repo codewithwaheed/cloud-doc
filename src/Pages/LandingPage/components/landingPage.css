@@ -22,23 +22,27 @@
   font: 24px poppinsBd;
   margin-top: 10px;
 }
-.landingSlider .mainInputDiv {
+.searchSec {
+  border: 2px solid rgba(112, 112, 112, 0.25);
+}
+.searchDiv .mainInputDiv {
   background-color: #fff;
   width: 100%;
   border-radius: 10px;
   padding: 20px;
   margin-top: 20px;
+  border: 2px solid rgba(112, 112, 112, 0.25);
 }
-.landingSlider .inputDiv {
+.searchDiv .inputDiv {
   display: flex;
   border-bottom: 1px solid #c7c7c7;
   padding: 10px 0;
 }
-.landingSlider .inputDiv .iconM {
+.searchDiv .inputDiv .iconM {
   width: 15px;
   margin-right: 10px;
 }
-.landingSlider .inputDiv .inputM {
+.searchDiv .inputDiv .inputM {
   border: none;
   outline: none;
   width: 100%;
@@ -52,14 +56,14 @@
   font: 15px poppinsSb;
   margin-top: 25px;
 }
-.landingSlider .mainSearchDiv {
+.searchDiv .mainSearchDiv {
   background-color: #fff;
   display: flex;
   height: 60px;
   width: 100%;
   margin-top: 20px;
 }
-.landingSlider .mainSearchDiv .searchSec {
+.searchDiv .mainSearchDiv .searchSec {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -85,7 +89,7 @@
 }
 .mainSearchDiv .divider {
   width: 2px;
-  height: 60%;
+  margin-right: 30px;
   background-color: #c7c7c7;
   border-radius: 2px;
 }

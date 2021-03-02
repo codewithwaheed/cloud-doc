@@ -1,0 +1,125 @@
+.searchFilter {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.filterDiv {
+  border: 1px solid #707070;
+  padding: 10px 20px;
+  font: 15px poppins;
+  margin-right: 20px;
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+.searchFilter .titleText {
+  font: 18px poppinsSb;
+}
+.filterSelect {
+  display: flex;
+  justify-content: space-between;
+  font: 15px poppins;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 40px;
+
+  border: 1px solid #707070;
+}
+.resultSec .pageTitle {
+  font: 18px poppinsSb;
+  padding-bottom: 40px;
+}
+.searchDoctorCard {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/* .searchDoctorCard .btnSec {
+} */
+.searchDoctorCard .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.searchDoctorCard .profile {
+  width: 200px;
+  margin: 0 auto;
+}
+.searchDoctorCard .name {
+  font: 23px poppinsBd;
+  margin-bottom: 10px;
+}
+.searchDoctorCard .text {
+  font: 15px poppins;
+  margin-bottom: 10px;
+}
+.skill .title {
+  font: 20px poppinsSb;
+}
+.skill {
+  display: flex;
+  align-items: flex-start;
+
+  border-right: 1px solid #707070;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.skill .icon {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.skillFlex {
+  flex-shrink: 1;
+}
+
+.searchDoctorCard .btnVideo {
+  border: 1px solid #00234b;
+}
+.searchDoctorCard .btnBook {
+  background-color: #6bcae2;
+  color: #fff;
+}
+.searchDoctorCard .btnSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.searchDoctorCard .textBg {
+  font: 18px poppins;
+  color: #707070;
+  margin: 10px 0;
+}
+
+.presentDiv {
+  text-align: center;
+  background-color: #eafbff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  max-width: max-content;
+  margin-bottom: 10px;
+}
+.presentDiv .icon {
+  flex-shrink: 0;
+}
+.presentDiv .text {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.presentDiv .greenCircle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #1baa0e;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.presentDiv .availableText {
+  color: #1baa0e;
+  font: 12px poppinsSb;
+}
