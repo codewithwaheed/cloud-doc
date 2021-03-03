@@ -80,7 +80,6 @@ button:focus {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-shrink: 0;
 }
 .flexCenter {
   display: flex;
@@ -91,14 +90,18 @@ button:focus {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-shrink: 0;
 }
 .flexBetweenCenter {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  flex-shrink: 0;
+}
+.flexNowrap {
+  flex-wrap: nowrap;
+}
+.alignStart {
+  align-items: flex-start;
 }
 .mobileCenter {
   width: fit-content;

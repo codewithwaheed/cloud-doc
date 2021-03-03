@@ -50,27 +50,31 @@ export default function SearchDoctorCard() {
       </div>
       <div className="flexCenter">
         <div className="presentDiv">
-          <div className="flexCenter mb-3">
+          <div className="flexCenter alignStart flexNowrap  mb-3">
             <img src="/images/placeholder1.png" className="icon"></img>
             <span className="text mb-0 ml-2">
               WoodStreet Health Clinic, 15 Dallas, Texas
             </span>
           </div>
-          <div className="flexCenter">
-            <div className="greenCircle"></div>
-            <span className="availableText">Available Today</span>
+          <div className="centerDiv">
+            <div className="flexCenter ">
+              <div className="greenCircle"></div>
+              <span className="availableText">Available Today</span>
+            </div>
           </div>
         </div>
         <div className="presentDiv ml-0 ml-md-4">
-          <div className="flexCenter mb-3">
+          <div className="flexCenter alignStart flexNowrap mb-3">
             <img src="/images/placeholder1.png" className="icon"></img>
             <span className="text mb-0 ml-2">
               WoodStreet Health Clinic, 15 Dallas, Texas
             </span>
           </div>
-          <div className="flexCenter">
-            <div className="greenCircle"></div>
-            <span className="availableText">Available Today</span>
+          <div className="centerDiv">
+            <div className="flexCenter">
+              <div className="greenCircle"></div>
+              <span className="availableText">Available Today</span>
+            </div>
           </div>
         </div>
       </div>
