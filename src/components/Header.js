@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HeaderSideBar from "./HeaderSideBar";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 function Header(props) {
   // sideBar state
   const [active, setHandleActive] = useState(false);
@@ -41,13 +41,13 @@ function Header(props) {
             : "navbar navbar-expand-md navbar-light bg-navColor"
         }
       >
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img
             src={transparent ? "/images/logoWhite.png" : "/images/logoBlue.png"}
             className="logo"
             alt="logo"
-          ></img>{" "}
-        </a>
+          ></img>
+        </Link>
         {/* HeaderSideBar Component*/}
         <div className=" d-inline d-md-none">
           <HeaderSideBar activeSideBar={active} closeSideBar={closeSideBar} />

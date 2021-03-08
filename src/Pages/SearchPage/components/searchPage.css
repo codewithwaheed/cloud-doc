@@ -59,7 +59,10 @@
   margin-bottom: 10px;
 }
 .skill .title {
-  font: 20px poppinsSb;
+  font: 18px poppinsSb;
+}
+.skillFlex {
+  margin-top: 20px;
 }
 .skill {
   display: flex;
@@ -73,6 +76,7 @@
 .skill .icon {
   flex-shrink: 0;
   margin-right: 10px;
+  margin-top: 5px;
 }
 .skillFlex {
   flex-shrink: 1;

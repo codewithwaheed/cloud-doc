@@ -18,7 +18,7 @@ export default function StepsSection() {
             <button className="primaryBtn seeBtn ">See specialties</button>
           </div>
           <div className="imgSec">
-            <img src="/images/step1.png" className="img" alt="step"></img>
+            <img src="/images/step1.svg" className="img" alt="step"></img>
           </div>
         </div>
         <div className="centerFlex d-none d-md-flex">
@@ -26,7 +26,7 @@ export default function StepsSection() {
         </div>
         <div className="stepFlex flexReverse">
           <div className="imgSec">
-            <img src="/images/step2.png" className="img" alt="step"></img>
+            <img src="/images/step2.svg" className="img" alt="step"></img>
           </div>
           <div className="contentSec">
             <div className="countCircle">2</div>
@@ -52,7 +52,7 @@ export default function StepsSection() {
             <button className="primaryBtn seeBtn ">See Availability</button>
           </div>
           <div className="imgSec">
-            <img src="/images/step3.png" className="img" alt="step"></img>
+            <img src="/images/step3.svg" className="img" alt="step"></img>
           </div>
         </div>
       </div>

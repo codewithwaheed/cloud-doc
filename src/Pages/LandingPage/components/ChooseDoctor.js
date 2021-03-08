@@ -6,7 +6,7 @@ export default function ChooseDoctor() {
       <div className="mainFlex">
         <div className="doctorCard">
           <img
-            src="/images/cloudDoctor.png"
+            src="/images/cloudDoctor.svg"
             alt="cloudDoctor"
             className="docImg"
           ></img>
@@ -23,7 +23,7 @@ export default function ChooseDoctor() {
         </div>
         <div className="doctorCard mr-0">
           <img
-            src="/images/onlineDoc.png"
+            src="/images/onlineDoc.svg"
             alt="cloudDoctor"
             className="docImg"
           ></img>

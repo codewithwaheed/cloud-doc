@@ -116,6 +116,9 @@ button:focus {
 .headerPadding {
   padding-top: 60px;
 }
+.pointer {
+  cursor: pointer;
+}
 /* header css */
 .navbar {
   position: fixed;
@@ -145,7 +148,7 @@ button:focus {
   margin-left: 20px;
 }
 .bg-navColor {
-  background-color: rgba(107, 202, 226, 0.1);
+  background-color: #e2f7fc;
 }
 
 /* Button Css */

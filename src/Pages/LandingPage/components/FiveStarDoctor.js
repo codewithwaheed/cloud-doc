@@ -24,7 +24,7 @@ export default function FiveStarDoctor() {
             </div>
 
             <img
-              src="/images/fiveStar.png"
+              src="/images/fiveStar.svg"
               className="img d-inline d-md-none mt-3"
               alt="fiveStar"
             ></img>
@@ -35,7 +35,7 @@ export default function FiveStarDoctor() {
           </div>
           <div className="imgSec">
             <img
-              src="/images/fiveStar.png"
+              src="/images/fiveStar.svg"
               className="img d-none d-md-inline"
               alt="fiveStar"
             ></img>

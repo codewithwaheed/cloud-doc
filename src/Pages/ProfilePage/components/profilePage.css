@@ -1,0 +1,358 @@
+.profileSec .header {
+  display: flex;
+}
+.profileSec .header .profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.profileSec .header .name {
+  font: 23px poppinsBd;
+}
+.profileSec .header .subTitle {
+  font: 16px poppinsMd;
+}
+.profileSec .header .placeText {
+  font: 14px poppinsMd;
+  color: rgb(135, 135, 145);
+  margin-bottom: 5px;
+}
+.profileSec .tabSec {
+  display: flex;
+  align-items: center;
+}
+.profileSec .tabSec .tab {
+  display: flex;
+  align-items: center;
+  font: 14px poppinsMd;
+  background-color: rgb(243, 243, 244);
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+.profileSec .tabSec .tab .icon {
+  width: 25px;
+  margin-right: 10px;
+}
+.profileSec .videoIcon {
+  width: 15px;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+.profileSec .divider {
+  background-color: #c7c7c7;
+  width: 100%;
+  margin-top: 30px;
+}
+.profileSec .detailTabSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.profileSec .detailTab {
+  display: flex;
+
+  margin-bottom: 20px;
+
+  align-items: flex-start;
+}
+.profileSec .detailTab .title {
+  font: 16px poppinsSb;
+}
+.profileSec .detailTab .text {
+  font: 12px poppins;
+  color: rgb(0, 35, 75);
+}
+.profileSec .text {
+  font: 15px poppinsMd;
+}
+.profileSec .reviewSeC {
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+}
+.profileSec .reviewFlexM {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+.profileSec .titleBg {
+  font: 20px poppinsBd;
+  margin-top: 20px;
+}
+.profileSec .reviewSeC .title {
+  font: 15px poppinsSb;
+  margin-bottom: 10px;
+}
+.profileSec .reviewSeC .ratingNumber {
+  font: 45px poppinsSb;
+  margin-bottom: 5px;
+}
+.profileSec .reviewSeC .reviewText {
+  font-family: poppinsSb;
+  cursor: pointer;
+}
+.profileStar {
+  height: 22px;
+  width: 22px;
+}
+.profileStar2 {
+  height: 15px;
+  width: 15px;
+}
+.textDarkBlue {
+  color: rgb(43, 191, 237);
+}
+.reviewSeC .overAll {
+  padding-right: 20px;
+}
+.reviewSeC .recentReviews {
+  padding: 0;
+}
+.reviewSeC .recentReviews .seeAllBtn {
+  border: 1px solid rgb(0, 35, 75);
+  border-radius: 0;
+  color: rgb(0, 35, 75);
+  margin-top: 20px;
+}
+.reviewSeC .recentReviews .seeAllBtn:hover {
+  border: 1px solid rgb(0, 35, 75);
+  background-color: rgb(0, 35, 75);
+
+  color: #fff;
+}
+.reviewSeC .recentReviews .desc {
+  font: 17px poppins;
+  color: rgb(0, 35, 75);
+  padding: 20px 0;
+}
+.reviewDateDiv {
+  display: flex;
+}
+.reviewText {
+  color: rgb(135, 135, 145);
+  font: 13px poppins;
+}
+
+/* booking css */
+.bookingDiv {
+  background-color: #f3f3f4;
+  padding: 30px;
+}
+.bookingDiv .secTitle {
+  font: 20px poppinsBd;
+  margin-bottom: 20px;
+}
+.profileSec .inputDiv {
+  margin-bottom: 20px;
+}
+.profileSec .inputDiv .lable {
+  font: 15px poppinsMd;
+  margin-bottom: 5px;
+}
+.profileSec .inputDiv .input {
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid rgb(225, 225, 228);
+  padding: 15px;
+  font: 16px poppinsMd;
+}
+.profileSec .inputDiv .radioDiv {
+  width: 50%;
+  border: 1px solid rgb(225, 225, 228);
+  padding: 10px;
+
+  background-color: #fff;
+}
+.profileSec .inputDiv .radioLable {
+  font: 16px poppinsMd;
+  margin-left: 20px;
+}
+.bookingDiv .bookingBtn {
+  font: 20px poppinsSb;
+  color: #000;
+  background-color: var(--primaryBlue);
+  padding: 10px;
+  width: 100%;
+  border: none;
+  transition: ease-in 0.2s;
+}
+.bookingDiv .bookingBtn:hover {
+  background-color: "#AFEAAA";
+}
+.profileSec .secDiv {
+  margin-bottom: 40px;
+}
+.profileSec .secDiv .title {
+  font: 20px poppinsBd;
+  margin-bottom: 10px;
+}
+.profileSec .secDiv .text {
+  font: 15px poppins;
+}
+.profileSec .secDiv .ratingText {
+  font: 17px poppinsSb;
+}
+.profileSec .locationTextDiv {
+  padding: 20px 30px;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(243, 230, 255);
+  width: fit-content;
+  font: 15px poppinsMd;
+}
+.profileSec .locationTextDiv .img {
+  width: 30px;
+  margin-right: 10px;
+}
+.profileSec .secDiv .subTitle {
+  font: 18px poppinsMd;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.reviewSearchDiv {
+  margin-top: 30px;
+}
+.reviewSearchDiv .reviewSelect {
+  width: 100%;
+  height: 30px;
+
+  border: 1px solid rgb(178, 189, 201);
+}
+.reviewSearchDiv .sDiv {
+  position: relative;
+}
+.reviewSearchDiv .sDiv .img {
+  position: absolute;
+  width: 18px;
+  top: 5px;
+  cursor: pointer;
+  left: 5px;
+}
+.reviewSearchDiv .sDiv .searchInput {
+  border: 1px solid rgb(178, 189, 201);
+  padding-left: 30px;
+  height: 30px;
+  width: 100%;
+}
+
+/* review Card css */
+.reviewCard {
+  margin-bottom: 30px;
+}
+.reviewCard .reviewText {
+  font: 17px poppinsMd;
+  margin-top: 10px;
+}
+.reviewCard .reviewDetailText {
+  font: 16px poppinsMd;
+  color: rgb(135, 135, 145);
+  margin-right: 5px;
+}
+.faqSec .faqDiv {
+  margin-bottom: 40px;
+}
+.faqSec .faqDiv .faqTitle {
+  font: 17px poppinsSb;
+  margin-bottom: 10px;
+}
+.faqSec .faqDiv .faqText {
+  font: 15px poppinsMd;
+}
+
+/* booking Calender */
+.bookingCalenderDiv {
+  background-color: #fff;
+  padding: 10px;
+}
+.bookingCalenderDiv .header {
+  border-bottom: 1px solid #c7c7c7;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.bookingCalenderDiv .calenderController {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.bookingCalenderDiv .calenderController .arrowImg {
+  padding: 5px;
+  width: 20px;
+  cursor: pointer;
+}
+.bookingCalenderDiv .calenderController .itemDiv {
+  text-align: center;
+}
+.bookingCalenderDiv .calenderController .itemDiv .dayText {
+  font: 16px poppinsSb;
+}
+.opacityHalf {
+  opacity: 0.4;
+}
+.bookingCalenderDiv .innerCalender {
+  min-height: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.bookingCalenderDiv .innerCalender .slots {
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #48afc9;
+  font: 12px poppinsMd;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+}
+.bookingCalenderDiv .innerCalender .slots:hover {
+  background-color: #48afc9;
+  border: 1px solid #48afc9;
+  color: #fff;
+}
+.bookingCalenderDiv .innerCalender .slotsActive {
+  background-color: #48afc9;
+  border: 1px solid #48afc9;
+  color: #fff;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .profileSec .header .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .profileSec .header .name {
+    font: 35px poppinsBd;
+  }
+  .profileSec .header .subTitle {
+    font: 17px poppinsMd;
+  }
+  .profileSec .header .placeText {
+    font: 15px poppinsMd;
+  }
+
+  .profileSec .tabSec .tab {
+    font: 14px poppinsMd;
+  }
+  .profileSec .detailTab {
+    width: 50%;
+  }
+  .reviewSeC .recentReviews {
+    border-left: 1px solid #c7c7c7;
+    padding: 0 20px;
+  }
+  .profileSec .locationTextDiv {
+    align-items: center;
+  }
+  .profileSec .secDiv .title {
+    font: 24px poppinsBd;
+  }
+}

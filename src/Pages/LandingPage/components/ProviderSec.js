@@ -4,11 +4,11 @@ import "react-multi-carousel/lib/styles.css";
 
 export default function ProviderSec(props) {
   const data = [
-    "/images/provider1.png",
-    "/images/provider2.png",
-    "/images/provider3.png",
-    "/images/provider4.png",
-    "/images/provider5.png",
+    "/images/provider1.svg",
+    "/images/provider2.svg",
+    "/images/provider3.svg",
+    "/images/provider4.svg",
+    "/images/provider5.svg",
   ];
   const responsive = {
     desktop: {

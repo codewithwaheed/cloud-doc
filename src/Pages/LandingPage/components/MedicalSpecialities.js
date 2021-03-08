@@ -3,27 +3,27 @@ import React from "react";
 export default function MedicalSpecialities() {
   const data = [
     {
-      img: "/images/heart.png",
+      img: "/images/heart.svg",
       title: "Primary Care",
       text: " Lorem ipsum dolor sit amet, consectetur adipiscing.",
     },
     {
-      img: "/images/teeth.png",
+      img: "/images/teeth.svg",
       title: "Dentist",
       text: " Lorem ipsum dolor sit amet, consectetur adipiscing.",
     },
     {
-      img: "/images/lungs.png",
+      img: "/images/lungs.svg",
       title: "Purmanologist",
       text: " Lorem ipsum dolor sit amet, consectetur adipiscing.",
     },
     {
-      img: "/images/stomach.png",
+      img: "/images/stomach.svg",
       title: "Gastrologist ",
       text: " Lorem ipsum dolor sit amet, consectetur adipiscing.",
     },
     {
-      img: "/images/ear.png",
+      img: "/images/ear.svg",
       title: "ENT Specialist",
       text: " Lorem ipsum dolor sit amet, consectetur adipiscing.",
     },
