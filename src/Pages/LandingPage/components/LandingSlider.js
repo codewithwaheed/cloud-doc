@@ -51,11 +51,9 @@ export default function LandingSlider(props) {
       </div>
       <div className="landingSlider ">
         <div className="basicLandingRow">
-          <div className="title">
-            Find local doctors who take your insurance
-          </div>
+          <div className="title">Find and book the best doctors near you</div>
 
-          <SearchComponent />
+          <SearchComponent inputStyle={{ border: "none" }} />
         </div>
       </div>
     </div>

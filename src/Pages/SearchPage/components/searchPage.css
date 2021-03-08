@@ -51,7 +51,7 @@
   margin: 0 auto;
 }
 .searchDoctorCard .name {
-  font: 23px poppinsBd;
+  font: 20px poppinsBd;
   margin-bottom: 10px;
 }
 .searchDoctorCard .text {
@@ -95,7 +95,7 @@
   align-items: center;
 }
 .searchDoctorCard .textBg {
-  font: 18px poppins;
+  font: 15px poppins;
   color: #707070;
   margin: 10px 0;
 }
@@ -112,7 +112,7 @@
   flex-shrink: 0;
 }
 .presentDiv .text {
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 15px;
 }
 .presentDiv .greenCircle {

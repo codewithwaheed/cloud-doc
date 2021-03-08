@@ -65,9 +65,10 @@
 }
 .searchDiv .mainSearchDiv .searchSec {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 0 30px;
 }
 .mainSearchDiv .searchSec .inputDivD {
   display: flex;
@@ -92,6 +93,7 @@
   margin-right: 30px;
   background-color: #c7c7c7;
   border-radius: 2px;
+  height: 70%;
 }
 
 /* choose doc css */
@@ -101,7 +103,7 @@
 }
 .chooseDoctor .mainFlex {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 
   height: fit-content;
 }
@@ -113,7 +115,7 @@
   flex-direction: column;
   margin-bottom: 20px;
   min-height: 100%;
-  margin-right: 15px;
+  margin-right: 20px;
   flex-wrap: wrap;
 }
 .mainFlex .doctorCard .docImg {
@@ -131,7 +133,7 @@
 }
 .mainFlex .doctorCard .btnBook {
   padding: 8px 5px;
-  font: 10px poppinsSb;
+  font: 10px poppinsMd;
   border: none;
   border-radius: 5px;
   margin-top: 10px;
@@ -237,7 +239,7 @@
   border: 1px solid var(--primaryBlue);
   border-radius: 5px;
   color: var(--primaryBlue);
-  font: 14px poppinsSb;
+  font: 14px poppinsMD;
 }
 .medicalSpec .seeAllBtn:hover {
   background-color: var(--primaryBlue);
@@ -415,7 +417,7 @@
   }
   .mainFlex .doctorCard .btnBook {
     padding: 15px 0;
-    font: 15px poppinsSb;
+    font: 14px poppinsMd;
   }
 
   .basicLandingTitle {
@@ -435,7 +437,8 @@
     font: 18px poppins;
   }
   .stepFlex .contentSec .seeBtn {
-    font-size: 15px;
+    font-size: 14px;
+    font-family: poppinsMd;
     margin-top: 40px;
   }
   .flexReverse {

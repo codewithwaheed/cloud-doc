@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function SearchComponent() {
+export default function SearchComponent(props) {
+  const { mainStyle, inputStyle } = props;
   return (
     <div className="searchDiv">
       {/* mobile search */}
@@ -36,8 +37,8 @@ export default function SearchComponent() {
       </div>
 
       {/* desktop search */}
-      <div className="mainSearchDiv d-none d-md-flex">
-        <div className="searchSec">
+      <div className="mainSearchDiv  d-none d-md-flex" style={mainStyle}>
+        <div className="searchSec" style={inputStyle}>
           <div className="inputDivD">
             <div>
               <img
@@ -51,21 +52,20 @@ export default function SearchComponent() {
               placeholder="Conditions, Procedures, Doctors"
             ></input>
           </div>
-          <div className="d-flex">
-            <div className="divider"></div>
-            <div className="inputDivD">
-              <div>
-                <img
-                  className="icon"
-                  alt="icon"
-                  src="/images/markerIcon.png"
-                ></img>
-              </div>
-              <input
-                className="input"
-                placeholder="City, State or Zip Code"
-              ></input>
+          <div className="divider"></div>
+
+          <div className="inputDivD">
+            <div>
+              <img
+                className="icon"
+                alt="icon"
+                src="/images/markerIcon.png"
+              ></img>
             </div>
+            <input
+              className="input"
+              placeholder="City, State or Zip Code"
+            ></input>
           </div>
         </div>
         <button className="searchBtn">Search</button>

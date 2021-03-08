@@ -7,7 +7,7 @@ export default function SearchPage() {
   return (
     <div className="headerPadding">
       <div className="basicRow">
-        <SearchComponent />
+        <SearchComponent mainStyle={{ height: "50px", marginTop: "0" }} />
         <SearchFilter />
         <ResultSec />
       </div>
