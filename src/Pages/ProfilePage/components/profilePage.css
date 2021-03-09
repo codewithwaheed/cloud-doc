@@ -163,15 +163,31 @@
   padding: 10px 5px;
   font: 15px poppinsMd;
 }
-.profileSec .inputDiv .radioDiv {
-  width: 50%;
-  border: 1px solid rgb(225, 225, 228);
+.customRadioDiv {
+  display: flex;
+  align-items: center;
+}
+.customRadioDiv .radioDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
-
+  border: 1px solid #e7e7e9;
+  width: 50%;
   background-color: #fff;
 }
-.profileSec .inputDiv .radioLable {
-  font: 16px poppinsMd;
+.customRadioDiv .radioDiv .radioCircle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #000;
+}
+.customRadioDiv .radioDiv .radioCircleActive {
+  background-color: #48afc9;
+}
+.customRadioDiv .radioDiv .radioLable {
+  font: 15px poppinsMd;
   margin-left: 20px;
 }
 .bookingDiv .bookingBtn {
@@ -330,7 +346,7 @@
     border-radius: 50%;
   }
   .profileSec .header .name {
-    font: 35px poppinsBd;
+    font: 25px poppinsBd;
   }
   .profileSec .header .subTitle {
     font: 17px poppinsMd;

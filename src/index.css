@@ -252,7 +252,51 @@ button:focus {
   width: 18px;
   height: 17px;
 }
-
+/* customSelect css */
+.customSelect {
+  border: 1px solid #e7e7e9;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #fff;
+  font-size: 15px;
+  font-family: poppinsMd;
+}
+.customSelect .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropDown {
+  position: absolute;
+  z-index: 1000;
+  top: 50px;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #e7e7e9;
+}
+.dropDown .item {
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  transition: ease-in 0.2s;
+  font: 15px poppinsMd;
+  color: #878787;
+  cursor: pointer;
+  height: 41px;
+}
+.dropDown .item:hover {
+  background-color: #e7e7e9;
+}
+.customSelectModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 999;
+}
+/* customSelect Ends */
 /* footer css */
 .footerBg {
   background-position: center;
