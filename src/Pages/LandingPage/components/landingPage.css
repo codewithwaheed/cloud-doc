@@ -65,14 +65,17 @@
 }
 .searchDiv .mainSearchDiv .searchSec {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   width: 100%;
   padding: 0 30px;
+  padding-right: 0;
 }
 .mainSearchDiv .searchSec .inputDivD {
   display: flex;
   align-items: center;
+  width: 50%;
+  height: 100%;
 }
 .mainSearchDiv .searchSec .inputDivD .input {
   border: none;

@@ -110,6 +110,7 @@
 }
 .presentDiv .icon {
   flex-shrink: 0;
+  width: 15px;
 }
 .presentDiv .text {
   font-size: 14px;

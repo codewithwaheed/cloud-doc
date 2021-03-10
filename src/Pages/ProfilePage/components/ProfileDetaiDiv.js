@@ -86,7 +86,7 @@ export default function ProfileDetaiDiv() {
         </div>
         <div className="detailTabSec">
           <div className="detailTab">
-            <img className="icon mt-1" src="/images/done.png"></img>
+            <img className="icon mt-1" src="/images/done.svg"></img>
             <div className="ml-3">
               <div className="title">Highly recommended</div>
               <div className="text">
@@ -95,7 +95,7 @@ export default function ProfileDetaiDiv() {
             </div>
           </div>
           <div className="detailTab">
-            <img className="icon mt-1" src="/images/clockIcon.png"></img>
+            <img className="icon mt-1" src="/images/clock.svg"></img>
             <div className="ml-3">
               <div className="title">Excellent wait time</div>
               <div className="text">
@@ -104,7 +104,7 @@ export default function ProfileDetaiDiv() {
             </div>
           </div>
           <div className="detailTab">
-            <img className="icon mt-1" src="/images/lamp.png"></img>
+            <img className="icon mt-1" src="/images/lamp.svg"></img>
             <div className="ml-3">
               <div className="title">New patient appointments</div>
               <div className="text">

@@ -181,7 +181,7 @@
   width: 15px;
   border-radius: 50%;
   background-color: white;
-  border: 1px solid #000;
+  border: 1px solid #c7c7c7;
 }
 .customRadioDiv .radioDiv .radioCircleActive {
   background-color: #48afc9;
@@ -211,6 +211,7 @@
 }
 .profileSec .secDiv .text {
   font: 15px poppins;
+  opacity: 0.5;
 }
 .profileSec .secDiv .ratingText {
   font: 17px poppinsSb;

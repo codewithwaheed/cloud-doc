@@ -149,7 +149,7 @@ export default function PatientReviewSec() {
               <div className="col-6 ">
                 <div className="sDiv">
                   <img
-                    src="/images/searchIcon.png"
+                    src="/images/searchIcon.svg"
                     className="img"
                     alt="searech"
                   ></img>

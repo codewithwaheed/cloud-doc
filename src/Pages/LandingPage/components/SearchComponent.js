@@ -11,7 +11,7 @@ export default function SearchComponent(props) {
             <img
               className="iconM"
               alt="icon"
-              src="/images/searchIcon.png"
+              src="/images/searchIcon.svg"
             ></img>
           </div>
           <input
@@ -24,7 +24,7 @@ export default function SearchComponent(props) {
             <img
               className="iconM"
               alt="icon"
-              src="/images/markerIcon.png"
+              src="/images/markerIcon.svg"
             ></img>
           </div>
           <input
@@ -44,7 +44,7 @@ export default function SearchComponent(props) {
               <img
                 className="icon"
                 alt="icon"
-                src="/images/searchIcon.png"
+                src="/images/searchIcon.svg"
               ></img>
             </div>
             <input
@@ -52,14 +52,14 @@ export default function SearchComponent(props) {
               placeholder="Conditions, Procedures, Doctors"
             ></input>
           </div>
-          <div className="divider"></div>
 
           <div className="inputDivD">
+            <div className="divider"></div>
             <div>
               <img
                 className="icon"
                 alt="icon"
-                src="/images/markerIcon.png"
+                src="/images/markerIcon.svg"
               ></img>
             </div>
             <input

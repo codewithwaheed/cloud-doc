@@ -16,21 +16,21 @@ export default function SearchDoctorCard() {
 
             <div className="flexCenter skillFlex">
               <div className="skill">
-                <img src="/images/clockIcon.png" className="icon"></img>
+                <img src="/images/clock.svg" className="icon"></img>
                 <div>
                   <div className="title">Under 15 Min </div>
                   <div className="text">Wait Time</div>
                 </div>
               </div>
               <div className="skill">
-                <img src="/images/lamp.png" className="icon"></img>
+                <img src="/images/lamp.svg" className="icon"></img>
                 <div>
                   <div className="title">9 Years </div>
                   <div className="text">Experience</div>
                 </div>
               </div>
               <div className="skill">
-                <img src="/images/done.png" className="icon"></img>
+                <img src="/images/done.svg" className="icon"></img>
                 <div>
                   <div className="title"> 100%</div>
                   <div className="text">Satisfied Patients</div>
@@ -51,7 +51,7 @@ export default function SearchDoctorCard() {
       <div className="flexCenter">
         <div className="presentDiv">
           <div className="flexCenter alignStart flexNowrap  mb-3">
-            <img src="/images/placeholder1.png" className="icon"></img>
+            <img src="/images/placeholder.svg" className="icon"></img>
             <span className="text mb-0 ml-2">
               WoodStreet Health Clinic, 15 Dallas, Texas
             </span>
@@ -65,7 +65,7 @@ export default function SearchDoctorCard() {
         </div>
         <div className="presentDiv ml-0 ml-md-4">
           <div className="flexCenter alignStart flexNowrap mb-3">
-            <img src="/images/placeholder1.png" className="icon"></img>
+            <img src="/images/placeholder.svg" className="icon"></img>
             <span className="text mb-0 ml-2">
               WoodStreet Health Clinic, 15 Dallas, Texas
             </span>

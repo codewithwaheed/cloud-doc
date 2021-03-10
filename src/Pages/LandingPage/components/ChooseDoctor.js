@@ -4,7 +4,7 @@ export default function ChooseDoctor() {
   return (
     <div className=" basicLandingRow chooseDoctor ">
       <div className="mainFlex">
-        <div className="doctorCard">
+        <div className="doctorCard" style={{ borderColor: "#48afc9" }}>
           <img
             src="/images/cloudDoctor.svg"
             alt="cloudDoctor"
