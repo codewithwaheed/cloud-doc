@@ -6,6 +6,8 @@ function Header(props) {
   const [active, setHandleActive] = useState(false);
   // const transparent Bg state
   const [transparent, setTransparent] = useState(false);
+  // const active login Bg state
+  const [activeLogin, setActiveLogin] = useState(false);
   // path name value
   const { location } = props;
   const path = location.pathname;
@@ -119,10 +121,37 @@ function Header(props) {
               </a>
             </li>
           </ul>
-
-          <button className=" btnLogin" type="button">
-            Login/Sign Up
-          </button>
+          <div className="loginBtnDiv">
+            <button
+              onClick={() => setActiveLogin(!activeLogin)}
+              className=" btnLogin"
+              type="button"
+            >
+              Login/Sign Up
+            </button>
+            {activeLogin && (
+              <div
+                onClick={() => setActiveLogin(false)}
+                className="loginDropDown"
+              >
+                <div className="flexCenter item">
+                  <div className="title">Patients</div>
+                  <Link to="/patient/login">
+                    <div className="text">Log In</div>
+                  </Link>
+                  <Link to="/patient/signup">
+                    <div className="text">Sign up</div>
+                  </Link>
+                </div>
+                <div className="flexCenter item">
+                  <div className="title">Doctors</div>
+                  <Link to="/doctor/login">
+                    <div className="text">Log In</div>
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </nav>
     </div>

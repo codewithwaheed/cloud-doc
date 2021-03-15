@@ -1,6 +1,6 @@
 :root {
   --primaryBlue: #48afc9;
-  --primaryGreen: "#AFEAAA";
+  --primaryGreen: #afeaaa;
 }
 
 /* adding fonts */
@@ -44,6 +44,14 @@ button:focus {
   max-width: 1600px;
   margin: 0 auto;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
 .basicRow {
   padding: 20px 30px;
   max-width: 1600px;
@@ -58,6 +66,9 @@ button:focus {
 
 .lightBg {
   background-color: #f7f7f7;
+}
+.textLight {
+  color: rgb(135, 135, 145);
 }
 .poppins {
   font-family: poppins;
@@ -245,6 +256,30 @@ button:focus {
   margin-bottom: 40px;
   margin-left: 0;
   font-size: 15px;
+}
+.loginBtnDiv {
+  position: relative;
+}
+.loginBtnDiv .loginDropDown {
+  position: absolute;
+  background-color: #fff;
+  width: 200px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  top: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+}
+.loginBtnDiv .loginDropDown .item {
+  padding: 10px 0;
+  border-bottom: 1px solid #c7c7c7;
+}
+.loginBtnDiv .loginDropDown .item .title {
+  font: 12px poppinsBd;
+}
+.loginBtnDiv .loginDropDown .item .text {
+  font: 12px poppinsMd;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 /* Rating Css */

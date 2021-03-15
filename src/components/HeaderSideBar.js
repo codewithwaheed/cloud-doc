@@ -10,8 +10,13 @@ export default class HeaderSideBar extends Component {
         }
       >
         <div className="sideBarItemDiv">
-          <button className="primaryBtn btnSignUp">Sign Up</button>
-          <button className="primaryBtn btnLogin">Login</button>
+          <Link to="/patient/singup">
+            <button className="primaryBtn btnSignUp">Sign Up</button>
+          </Link>
+          <Link to="/patient/login">
+            <button className="primaryBtn btnLogin">Login</button>
+          </Link>
+
           <div
             onClick={() => {
               this.props.closeSideBar();

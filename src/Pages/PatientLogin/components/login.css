@@ -1,0 +1,121 @@
+.loginRow {
+  padding: 5vw 30px;
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%;
+  min-width: 320px;
+}
+.loginBtn {
+  width: 100%;
+  padding: 13px 0;
+  background-color: transparent;
+  border: 1px solid var(--primaryBlue);
+  font: 16px poppinsMd;
+}
+.signUpButton {
+  background-color: var(--primaryBlue);
+  color: #fff;
+}
+.signUpButton:hover {
+  background-color: var(--primaryGreen);
+  border-color: var(--primaryGreen);
+  color: #000;
+}
+.orText {
+  padding: 20px 0;
+  text-align: center;
+  font: 15px poppinsMd;
+}
+.loginRow .title {
+  font: 16px poppinsSb;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.inputDiv {
+  margin-bottom: 20px;
+}
+.textInput {
+  border: 1px solid rgb(225, 225, 228);
+  background-color: #fff;
+  height: 48px;
+  width: 100%;
+  font: 14px poppins;
+  padding: 14px 12px 12px;
+}
+.label {
+  font: 14px poppinsSb;
+}
+.loginButton {
+  border-color: #000;
+  margin-top: 20px;
+}
+.loginButton:hover {
+  background-color: var(--primaryGreen);
+}
+
+.patientSignUp {
+  padding: 5vw 30px;
+  margin: 0 auto;
+  max-width: 600px;
+  min-width: 300px;
+  width: 100%;
+}
+.patientSignUp .title {
+  font: 24px poppinsSb;
+}
+.patientSignUp .inputDiv {
+  margin-bottom: 30px;
+}
+.patientSignUp .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: #fff;
+  border: 1px solid var(--primaryBlue);
+  margin-right: 10px;
+}
+.patientSignUp .circleActive {
+  background-color: var(--primaryBlue);
+}
+
+/* forget Page css */
+.forgetRow {
+  max-width: 600px;
+  width: 100%;
+  min-width: 300px;
+  padding: 8vw 4vw;
+}
+.forgetRow .title {
+  font: 20px poppinsBd;
+  margin-bottom: 15px;
+}
+.forgetRow .text {
+  font: 15px poppins;
+  margin-bottom: 30px;
+}
+.forgetRow .contBtn {
+  background-color: var(--primaryBlue);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font: 14px poppinsMd;
+}
+.forgetRow .contBtn:hover {
+  background-color: var(--primaryGreen);
+  color: #000;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .forgetRow .title {
+    font: 40px poppinsBd;
+    margin-bottom: 15px;
+  }
+  .forgetRow {
+    max-width: 800px;
+    width: 100%;
+    min-width: 300px;
+    padding: 8vw 8vw;
+  }
+}
