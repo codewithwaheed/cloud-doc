@@ -7,10 +7,10 @@ import {
 } from "date-fns";
 import React, { useState } from "react";
 
-export default function BookingCalender() {
+export default function BookingCalender(props) {
   const [currentDate, setcurrentDate] = useState(new Date());
   const [controllerDate, setControllerDate] = useState(new Date());
-  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(props.selected || null);
 
   const timeSlotsData = [
     {
@@ -102,12 +102,18 @@ export default function BookingCalender() {
   };
 
   const renderTimeSlots = (timeSlots) => {
+    const handleSelect = (day) => {
+      SetSelectedDate(day);
+      props.onSelect(day);
+    };
     return (
       <div>
         {timeSlots.map((item) => {
           return (
             <div
-              onClick={() => SetSelectedDate(item)}
+              onClick={() => {
+                handleSelect(item);
+              }}
               className={
                 isEqual(selectedDate, item) ? "slots slotsActive" : "slots"
               }
@@ -141,9 +147,11 @@ export default function BookingCalender() {
   return (
     <div>
       <div className="bookingCalenderDiv">
-        <div className="header">
-          <span> 14211 FM 2920 Rd, Ste 110, Tomball, TX 77377</span>
-        </div>
+        {props.hideHeader || (
+          <div className="header">
+            <span> 14211 FM 2920 Rd, Ste 110, Tomball, TX 77377</span>
+          </div>
+        )}
         <div className="calenderController">
           <img
             onClick={PreviousDays}

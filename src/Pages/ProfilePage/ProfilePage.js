@@ -4,8 +4,8 @@ import PatientReviewSec from "./components/PatientReview";
 import BookingDiv from "./BookingDiv";
 import ProfileDetaiDiv from "./components/ProfileDetaiDiv";
 import "./components/profilePage.css";
-import ProfileExtraDetail from "./ProfileExtraDetail";
-import FaqSec from "./components/FaqSec";
+import AboutDetails from "./components/AboutDetails";
+import EducationBackground from "./components/EducationBackground";
 export default function ProfilePage() {
   return (
     <div className="headerPadding">
@@ -15,12 +15,9 @@ export default function ProfilePage() {
           <div className="col-md-4">
             <BookingDiv />
           </div>
-
-          <div className="col-md-8 col-sm-12">
-            <ProfileExtraDetail />
-            <PatientReviewSec />
-            <FaqSec />
-          </div>
+          <AboutDetails />
+          <EducationBackground />
+          <PatientReviewSec />
         </div>
       </div>
     </div>

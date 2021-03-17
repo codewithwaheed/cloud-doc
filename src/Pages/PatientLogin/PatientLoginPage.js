@@ -33,11 +33,35 @@ export default function PatientLoginPage() {
   );
 }
 
-export const InputDiv = ({ placeholder, label }) => {
+export const InputDiv = ({
+  placeholder,
+  label,
+  onChange,
+  defaultValue,
+  textArea,
+}) => {
+  const handleChange = (e) => {
+    onChange && onChange(e.target.value);
+  };
   return (
     <div className="inputDiv">
       {label && <label className="label">{label}</label>}
-      <input className="textInput" placeholder={placeholder}></input>
+      {textArea ? (
+        <textarea
+          onChange={handleChange}
+          className="inputStyle"
+          placeholder={placeholder}
+          defaultValue={defaultValue}
+          rows={3}
+        ></textarea>
+      ) : (
+        <input
+          onChange={handleChange}
+          className="textInput"
+          placeholder={placeholder}
+          defaultValue={defaultValue}
+        ></input>
+      )}
     </div>
   );
 };

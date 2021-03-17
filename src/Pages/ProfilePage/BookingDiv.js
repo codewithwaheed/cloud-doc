@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import CustomSelect from "../../components/CustomSelect";
 import BookingCalender from "./components/BookingCalender";
 import CustomChecks from "./components/CustomChecks";
-
-export default function BookingDiv() {
+import { withRouter } from "react-router-dom";
+function BookingDiv(props) {
   const reasonData = [
     { value: "inlness", text: "illness" },
     { value: "consulation", text: "Genrel Consultation" },
   ];
+
+  const [selectedDate, setselectedDate] = useState(null);
+
+  const handleContinueBooking = () => {
+    if (!selectedDate) {
+      return;
+    }
+    props.history.push("/booking/review-booking");
+  };
+
   return (
     <div>
       <div className="bookingDiv">
@@ -29,11 +39,14 @@ export default function BookingDiv() {
         </div>
         <div className="inputDiv">
           <lable className="lable">Select an available time</lable>
-          <BookingCalender />
+          <BookingCalender onSelect={(date) => setselectedDate(date)} />
         </div>
 
-        <button className="bookingBtn">Continue Booking</button>
+        <button onClick={handleContinueBooking} className="bookingBtn">
+          Continue Booking
+        </button>
       </div>
     </div>
   );
 }
+export default withRouter(BookingDiv);

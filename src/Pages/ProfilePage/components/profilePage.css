@@ -181,6 +181,7 @@
   width: 15px;
   border-radius: 50%;
   background-color: white;
+  flex-shrink: 0;
   border: 1px solid #c7c7c7;
 }
 .customRadioDiv .radioDiv .radioCircleActive {
@@ -339,6 +340,113 @@
   border: 1px solid #48afc9;
   color: #fff;
 }
+
+/* about detail sec */
+.aboutSec {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: #4fafc8;
+  padding: 50px 30px;
+  color: #fff;
+}
+.aboutSec .contentSec {
+  width: 100%;
+}
+.aboutSec .contentSec .title {
+  font: 18px poppinsBd;
+  margin-bottom: 10px;
+}
+.aboutSec .contentSec .text {
+  font: 18px poppins;
+}
+.aboutSec .contentSec .offerBg {
+  background-color: #6bcae2;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* education css */
+.educationSec .secTitle {
+  font: 22px poppinsBd;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.educationSec .eduCard {
+  background-color: #e2f7fc;
+  padding: 30px 30px;
+  position: relative;
+  width: 313px;
+  min-height: 234px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.educationSec .title {
+  font: 18px poppinsMd;
+  margin-bottom: 15px;
+}
+.educationSec .text {
+  font: 18px poppins;
+  margin-bottom: 10px;
+}
+.educationSec .eduCard .img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.educationBg {
+  background-color: #e2f7fc;
+}
+.educationSec .eduAndTrain {
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 190px;
+}
+.educationSec .eduCard2 {
+  width: 100%;
+}
+.patientReviewDiv {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+  width: 100%;
+  margin-top: 50px;
+  padding: 50px 20px;
+}
+.patientReviewDiv .header {
+  padding-bottom: 30px;
+}
+.patientReviewDiv .patientFlex .userSec .userItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+.patientReviewDiv .patientFlex .userSec .userItem .name {
+  font: 18px poppinsBd;
+}
+.patientReviewDiv .secTitle {
+  font: 22px poppinsBd;
+}
+.arrowIcon {
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  margin-left: 30px;
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .profileSec .header .profile {
@@ -371,5 +479,14 @@
   }
   .profileSec .secDiv .title {
     font: 24px poppinsBd;
+  }
+  .aboutSec {
+    padding: 50px 60px;
+  }
+  .aboutSec .contentSec {
+    width: 45%;
+  }
+  .educationSec .eduCard2 {
+    width: 49.2%;
   }
 }

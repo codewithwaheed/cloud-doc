@@ -3,6 +3,29 @@ import Rating from "../../../components/Rating/Rating";
 import ReviewCard from "./reviewCard";
 
 export default function PatientReviewSec() {
+  const user = [
+    {
+      id: "1",
+      name: "John Doe",
+      verified: true,
+      date: "09/01/2021",
+      img: "/images/reviewProfile1.png",
+    },
+    {
+      id: "2",
+      name: "Shane Star",
+      verified: false,
+      date: "09/01/2021",
+      img: "/images/reviewProfile2.png",
+    },
+    {
+      id: "3",
+      name: "David John",
+      verified: false,
+      date: "09/01/2021",
+      img: "/images/reviewProfile3.png",
+    },
+  ];
   const reviewData = [
     {
       rating: "5",
@@ -32,154 +55,34 @@ export default function PatientReviewSec() {
     },
   ];
   return (
-    <div>
-      <div className="secDiv">
-        <div className="title">Patient reviews</div>
-        <div className="text">
-          All reviews have been submitted by patients after seeing the provider.
-        </div>
-
-        <div>
-          <div className="reviewSeC mt-1 pt-3 d-flex d-md-none">
-            <div className="overAll">
-              <div className="text title">Overall rating</div>
-              <div className="ratingNumber">5.00</div>
-              <Rating
-                sizeClass={"profileStar"}
-                color="#EECE00"
-                borderColor="#EECE00"
-                readOnly
-                fixRating="5"
-              />
-            </div>
-            <div className="reviewFlexM">
-              <div>
-                <div className="text title">Average wait time</div>
-                <div className="d-flex">
-                  <div className="text mr-1">4.00</div>
-                  <Rating
-                    sizeClass={"profileStar2"}
-                    color="#EECE00"
-                    borderColor="#EECE00"
-                    readOnly
-                    fixRating="4"
-                  />
-                </div>
-              </div>
-              <div className="">
-                <div className="text title">Bedside manner</div>
-                <div className="d-flex">
-                  <div className="text mr-1">5.00</div>
-                  <Rating
-                    sizeClass={"profileStar2"}
-                    color="#EECE00"
-                    borderColor="#EECE00"
-                    readOnly
-                    fixRating="5"
-                  />
-                </div>
-              </div>
-            </div>
+    <>
+      <div className="patientReviewDiv">
+        <div className="flexCenter header">
+          <div className="secTitle">Patient reviews</div>
+          <div className="arrowIcon">
+            <img src="/images/arrowLeft1.png" alt="arrow"></img>
           </div>
-          <div
-            className="flexBetweenCenter d-none d-md-flex"
-            style={{ maxWidth: "70%" }}
-          >
-            <div>
-              {" "}
-              <div className="subTitle">Overall rating</div>
-              <div className="d-flex">
-                <Rating
-                  sizeClass={"profileStar"}
-                  color="#EECE00"
-                  borderColor="#EECE00"
-                  readOnly
-                  fixRating="5"
-                />
-                <span className="ratingText ml-2">5.00</span>
-              </div>
-            </div>
-            <div>
-              {" "}
-              <div className="subTitle">Wait time</div>
-              <div className="d-flex">
-                <Rating
-                  sizeClass={"profileStar"}
-                  color="#EECE00"
-                  borderColor="#EECE00"
-                  readOnly
-                  fixRating="4"
-                />
-                <span className="ratingText ml-2">4.00</span>
-              </div>
-            </div>
-            <div>
-              {" "}
-              <div className="subTitle">Bedside manner</div>
-              <div className="d-flex">
-                <Rating
-                  sizeClass={"profileStar"}
-                  color="#EECE00"
-                  borderColor="#EECE00"
-                  readOnly
-                  fixRating="5"
-                />
-                <span className="ratingText ml-2">5.00</span>
-              </div>
-            </div>
+          <div className="arrowIcon">
+            <img src="/images/arrowRight1.png" alt="arrow"></img>
           </div>
         </div>
-
-        <div className="row reviewSearchDiv">
-          <div className="col-md-5 col-sm-12">
-            <div className="title" style={{ fontSize: "18px" }}>
-              37 reviews
-            </div>
-          </div>
-          <div className="col-md-7 col-sm-12">
-            <div className="row">
-              <div className="col-6 ">
-                <select className="reviewSelect" defaultValue="newest">
-                  <option value="newest">Newest</option>
-                  <option value="oldest">Oldest</option>
-                  <option value="topRated">Top rated</option>
-                  <option value="lowestRated">Lowest rated</option>
-                </select>
-              </div>
-              <div className="col-6 ">
-                <div className="sDiv">
-                  <img
-                    src="/images/searchIcon.svg"
-                    className="img"
-                    alt="searech"
-                  ></img>
-                  <input
-                    className="searchInput"
-                    type="text"
-                    placeholder="Search"
-                  ></input>
+        <div className="patientFlex">
+          <div className="userSec">
+            {user.map((item, index) => {
+              return (
+                <div key={index} className="userItem">
+                  <img src={item.img} className="profile"></img>
+                  <div>
+                    <div className="name">{item.name}</div>
+                    <div className="dateText">{item.date}</div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
-        </div>
-        <div className="mt-4">
-          {" "}
-          {reviewData.map((item) => {
-            const { name, text, rating, date, verified, videoVisit } = item;
-            return (
-              <ReviewCard
-                name={name}
-                text={text}
-                rating={rating}
-                date={date}
-                verified={verified}
-                videoVisit={videoVisit}
-              />
-            );
-          })}
+          <div className="reviewSec"></div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
