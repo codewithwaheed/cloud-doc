@@ -2,33 +2,28 @@ import React from "react";
 import Rating from "../../../components/Rating/Rating";
 
 export default function reviewCard(props) {
-  const { rating = 5, text, date, verified, videoVisit, name } = props;
+  const { rating = 5, text, videoVisit, title } = props;
   return (
     <div className="reviewCard">
+      <div className="title mb-3 mt-2">{title}</div>
       <Rating
         sizeClass={"profileStar"}
-        color="#EECE00"
-        borderColor="#EECE00"
+        color="#6BCAE2"
+        borderColor="#6BCAE2"
         readOnly
         fixRating={rating}
       />
-      <div className="reviewText">{text}</div>
-      <div className="flexCenter mt-2">
-        <span className="reviewDetailText">{date}</span>
-        <span className="reviewDetailText">-</span>
-        <span className="reviewDetailText">{name}</span>
-        <span className="reviewDetailText">-</span>
-        <span className="reviewDetailText">
-          {verified ? " Verified patient" : "Unverifid patient"}
+      <div className="reviewText mb-3">{text}</div>
+
+      {videoVisit && (
+        <span className="flesCenter  reviewDetailText">
+          <img
+            src="/images/videoChat.png"
+            style={{ width: "30px", marginRight: "10px" }}
+          ></img>
+          Video Visit
         </span>
-        <span className="reviewDetailText">-</span>
-        {videoVisit && (
-          <span className="flesCenter reviewDetailText">
-            <img src="/images/videoChat.png" style={{ width: "20px" }}></img>{" "}
-            Video Visit
-          </span>
-        )}
-      </div>
+      )}
     </div>
   );
 }

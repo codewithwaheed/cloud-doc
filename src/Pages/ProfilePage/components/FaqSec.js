@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function FaqSec() {
   const faqData = [
@@ -19,16 +19,33 @@ export default function FaqSec() {
     },
   ];
   return (
-    <div className="secDiv faqSec">
+    <div className=" faqSec">
       <div className="title">Frequently asked questions</div>
       {faqData.map((item, index) => {
-        return (
-          <div key={index} className="faqDiv">
-            <div className="faqTitle">{item.title}</div>
-            <div className="faqText">{item.text}</div>
-          </div>
-        );
+        return <QuestionComponent {...item} key={index} />;
       })}
     </div>
   );
 }
+
+const QuestionComponent = ({ title, text }) => {
+  const [active, setActive] = useState(false);
+  return (
+    <>
+      <div
+        onClick={() => {
+          setActive(!active);
+        }}
+        className="qestionDiv"
+      >
+        <span>{title}</span>
+        <img
+          src={active === true ? "/images/minus.png" : "/images/plus.png"}
+          className="img pointer"
+        ></img>
+      </div>
+
+      {active && <div className="text mb-4 mt-3">{text}</div>}
+    </>
+  );
+};

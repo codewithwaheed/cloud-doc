@@ -265,24 +265,27 @@
 .reviewCard {
   margin-bottom: 30px;
 }
+.reviewCard .title {
+  font: 18px poppinsSb;
+}
 .reviewCard .reviewText {
-  font: 17px poppinsMd;
+  font: 18px poppins;
   margin-top: 10px;
+  color: #000;
 }
 .reviewCard .reviewDetailText {
   font: 16px poppinsMd;
-  color: rgb(135, 135, 145);
+
   margin-right: 5px;
 }
-.faqSec .faqDiv {
-  margin-bottom: 40px;
+.faqSec {
+  width: 100%;
 }
-.faqSec .faqDiv .faqTitle {
-  font: 17px poppinsSb;
-  margin-bottom: 10px;
-}
-.faqSec .faqDiv .faqText {
-  font: 15px poppinsMd;
+.faqSec .title {
+  font: 18px poppinsBd;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 /* booking Calender */
@@ -384,7 +387,7 @@
   position: relative;
   width: 313px;
   min-height: 234px;
-  margin-right: 10px;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 .educationSec .title {
@@ -422,16 +425,43 @@
 .patientReviewDiv .header {
   padding-bottom: 30px;
 }
-.patientReviewDiv .patientFlex .userSec .userItem {
+.patientReviewDiv .patientFlex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+  flex-wrap: wrap;
+}
+.patientFlex .userSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   width: 100%;
 }
+.patientReviewDiv .patientFlex .userSec .userItem {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+
+  cursor: pointer;
+  width: 100%;
+}
+.patientReviewDiv .patientFlex .userSec .userItemActive {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+}
 .patientReviewDiv .patientFlex .userSec .userItem .name {
-  font: 18px poppinsBd;
+  font: 15px poppinsBd;
+  margin-top: 10px;
+}
+.patientReviewDiv .patientFlex .userSec .userItem .profile {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.patientReviewDiv .patientFlex .userSec .userItem .date {
+  font: 12px poppinsBd;
 }
 .patientReviewDiv .secTitle {
   font: 22px poppinsBd;
@@ -446,6 +476,23 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   margin-left: 30px;
+}
+
+.qestionDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  font: 18px poppinsMd;
+  color: #000;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+.faqSec .text {
+  color: #727272;
+  padding-left: 40px;
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -488,5 +535,21 @@
   }
   .educationSec .eduCard2 {
     width: 49.2%;
+  }
+  .patientFlex .userSec {
+    flex-direction: column;
+    width: 35%;
+  }
+  .patientFlex .reviewSec {
+    width: 60%;
+  }
+
+  .patientReviewDiv .patientFlex .userSec .userItem .name {
+    font: 18px poppinsBd;
+    margin-top: 0;
+  }
+
+  .patientReviewDiv .patientFlex .userSec .userItem {
+    flex-direction: row;
   }
 }

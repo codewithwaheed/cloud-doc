@@ -6,6 +6,7 @@ import ProfileDetaiDiv from "./components/ProfileDetaiDiv";
 import "./components/profilePage.css";
 import AboutDetails from "./components/AboutDetails";
 import EducationBackground from "./components/EducationBackground";
+import FaqSec from "./components/FaqSec";
 export default function ProfilePage() {
   return (
     <div className="headerPadding">
@@ -18,6 +19,7 @@ export default function ProfilePage() {
           <AboutDetails />
           <EducationBackground />
           <PatientReviewSec />
+          <FaqSec />
         </div>
       </div>
     </div>

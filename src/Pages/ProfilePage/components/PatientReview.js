@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Rating from "../../../components/Rating/Rating";
 import ReviewCard from "./reviewCard";
 
 export default function PatientReviewSec() {
+  const [activeReview, setactiveReview] = useState("1");
   const user = [
     {
       id: "1",
@@ -31,26 +32,21 @@ export default function PatientReviewSec() {
       rating: "5",
       text:
         "The staff and Dr. Martinez were wonderful. I felt listened to and comfortable. Dr. Martinez was thorough and kind. I feel like I have found an excellent primary care doctor in Dr. Martinez!",
-      date: "February 5, 2021",
-      verified: true,
-      name: "Cynthia W.",
+
       videoVisit: true,
+      title: "Great Experience",
     },
     {
       rating: "4",
       text:
         "She was amazing ! Very personable , goes the extra mile ! Really refreshing to have her for my new pcp",
-      date: "February 5, 2021",
-      verified: true,
-      name: "Jessica W.",
+
       videoVisit: false,
     },
     {
       rating: "5",
       text: "Great visit and I didn’t feel rushed at all.",
-      date: "December 23, 2020",
-      verified: false,
-      name: "Marla E.",
+
       videoVisit: true,
     },
   ];
@@ -59,28 +55,44 @@ export default function PatientReviewSec() {
       <div className="patientReviewDiv">
         <div className="flexCenter header">
           <div className="secTitle">Patient reviews</div>
-          <div className="arrowIcon">
-            <img src="/images/arrowLeft1.png" alt="arrow"></img>
-          </div>
-          <div className="arrowIcon">
-            <img src="/images/arrowRight1.png" alt="arrow"></img>
+          <div className="flexCenter">
+            <div className="arrowIcon">
+              <img src="/images/arrowLeft1.png" alt="arrow"></img>
+            </div>
+            <div className="arrowIcon">
+              <img src="/images/arrowRight1.png" alt="arrow"></img>
+            </div>
           </div>
         </div>
         <div className="patientFlex">
           <div className="userSec">
             {user.map((item, index) => {
               return (
-                <div key={index} className="userItem">
+                <div
+                  key={index}
+                  className={
+                    activeReview === item.id
+                      ? "userItem userItemActive"
+                      : "userItem"
+                  }
+                >
                   <img src={item.img} className="profile"></img>
-                  <div>
-                    <div className="name">{item.name}</div>
+                  <div className="ml-0 ml-md-4">
+                    <div className="flexCenter">
+                      <div className="name mr-2">{item.name}</div>
+                      {item.verified && (
+                        <img src="/images/verified.png" alt="verified"></img>
+                      )}
+                    </div>
                     <div className="dateText">{item.date}</div>
                   </div>
                 </div>
               );
             })}
           </div>
-          <div className="reviewSec"></div>
+          <div className="reviewSec mt-4 mt-md-0">
+            <ReviewCard {...reviewData[0]} />
+          </div>
         </div>
       </div>
     </>
