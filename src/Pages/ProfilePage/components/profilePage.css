@@ -350,9 +350,10 @@
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
-  background-color: #4fafc8;
+  background-color: #fff;
   padding: 50px 30px;
-  color: #fff;
+  color: var(--primaryBlue);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 .aboutSec .contentSec {
   width: 100%;
@@ -363,6 +364,7 @@
 }
 .aboutSec .contentSec .text {
   font: 18px poppins;
+  color: #7e7e7e;
 }
 .aboutSec .contentSec .offerBg {
   background-color: #6bcae2;
@@ -372,6 +374,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  color: #fff;
 }
 
 /* education css */
@@ -385,7 +388,7 @@
   background-color: #e2f7fc;
   padding: 30px 30px;
   position: relative;
-  width: 313px;
+  width: 290px;
   min-height: 234px;
   margin: 0 auto;
   margin-bottom: 10px;

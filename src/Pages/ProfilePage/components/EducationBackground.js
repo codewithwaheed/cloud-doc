@@ -17,21 +17,21 @@ export default function EducationBackground() {
           <div className="text">Houston Methodist</div>
           <div className="text">Primary Care Group </div>
           <div className="text">Katy MOB 1 </div>
-          <img src="/images/medal.svg" className="img"></img>
+          <img src="/images/practice.svg" className="img"></img>
         </div>
         <div className="eduCard">
           <div className="title">Hospital affiliations</div>
           <div className="text">Family Physician</div>
           <div className="text">Willowbrook</div>
           <div className="text">Hospital</div>
-          <img src="/images/medal.svg" className="img"></img>
+          <img src="/images/hospitalEdu.svg" className="img"></img>
         </div>
         <div className="eduCard">
           <div className="title">Board certifications</div>
           <div className="text">American Board of</div>
           <div className="text">Family Medicine</div>
 
-          <img src="/images/medal.svg" className="img"></img>
+          <img src="/images/quality.svg" className="img"></img>
         </div>
       </div>
 
