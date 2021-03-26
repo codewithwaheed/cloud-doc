@@ -3,6 +3,7 @@ import CustomSelect from "../../components/CustomSelect";
 import { InputDiv } from "../PatientLogin/PatientLoginPage";
 import CustomChecks from "../ProfilePage/components/CustomChecks";
 import AddPhoneNumber from "./components/AddPhoneNumber";
+import { Link } from "react-router-dom";
 import "./components/BookAndReview.css";
 import EditAppointment from "./components/EditAppointment";
 import WhoSeeingDoctor from "./components/WhoSeeingDoctor";
@@ -40,9 +41,11 @@ export default function BookAndReviewPage() {
               textArea
             />
             <CheckTerms />
-            <button className=" loginBtn signUpButton mt-5 mb-5">
-              Book appointment
-            </button>
+            <Link to="/booking/review-booking-loading">
+              <button className=" loginBtn signUpButton mt-5 mb-5">
+                Book appointment
+              </button>
+            </Link>
           </div>
         </div>
       </div>

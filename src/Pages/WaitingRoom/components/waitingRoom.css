@@ -1,0 +1,55 @@
+.waitingRoom {
+  padding-top: 100px;
+}
+.waitingRoom .videoDiv {
+  background-color: #000000;
+  max-width: 666px;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px;
+  min-height: 400px;
+  color: #fff;
+  text-align: center;
+}
+.waitingRoom .videoDiv .title {
+  font: 18px poppinsSb;
+}
+.waitingRoom .header .img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.waitingRoom .header {
+  margin: 0 auto;
+  justify-content: center;
+  padding: 30px;
+  border-bottom: 1px solid #c7c7c7;
+}
+.waitingRoom .header .waitingText {
+  color: rgb(135, 135, 145);
+  font: 16px poppinsMd;
+}
+.waitingRoom .header .name {
+  font: 18px poppinsSb;
+}
+.waitingRoom .header .workText {
+  font: 16px poppinsMd;
+}
+.waitingRoom .detailsDiv {
+  padding: 50px 30px;
+}
+.waitingRoom .detailsDiv .item {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.waitingRoom .detailsDiv .item .title {
+  font: 15px poppinsSb;
+  margin-bottom: 5px;
+}
+.waitingRoom .detailsDiv .item .text {
+  font: 13px poppinsSb;
+  color: rgb(135, 135, 145);
+}

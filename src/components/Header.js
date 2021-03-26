@@ -28,10 +28,8 @@ function Header(props) {
         else setTransparent(true);
       });
     }
-    return () => {
-      setTransparent(false);
-    };
-  }, []);
+    return () => {};
+  }, [path]);
 
   //   main return
   return (

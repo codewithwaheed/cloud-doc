@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function SearchComponent(props) {
   const { mainStyle, inputStyle } = props;
   return (
@@ -68,7 +68,10 @@ export default function SearchComponent(props) {
             ></input>
           </div>
         </div>
-        <button className="searchBtn">Search</button>
+
+        <button style={{ height: "100" }} className="searchBtn">
+          <Link to="/search">Search</Link>
+        </button>
       </div>
     </div>
   );

@@ -85,6 +85,50 @@
   font: 14px poppinsSb;
   cursor: pointer;
 }
+.appointmentBooked .getStartedDiv {
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 4px, rgb(0 0 0 / 10%) 0px 3px 4px,
+    rgb(0 0 0 / 15%) 0px 1px 5px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.appointmentBooked .getStartedDiv .logo {
+  width: 120px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bookLoading .header {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  margin-top: 25px;
+}
+.bookLoading .header .logo {
+  width: 150px;
+}
+.bookLoading .header .title {
+  font: 20px poppinsSb;
+}
+.bookLoading .header .text {
+  font: 16px poppins;
+}
+.bookLoading .contentFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.bookLoading .contentFlex .title {
+  font: 18px poppinsSb;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.bookLoading .contentFlex .text {
+  font: 14px poppinsMd;
+  text-align: center;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {

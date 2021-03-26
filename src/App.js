@@ -10,6 +10,8 @@ import SingupPage from "./Pages/PatientLogin/SingupPage";
 import DoctorLogin from "./Pages/DoctorLogin/DoctorLogin";
 import ForgetPasswordPage from "./Pages/DoctorLogin/ForgetPasswordPage";
 import BookAndReviewPage from "./Pages/BookAndReview/BookAndReviewPage";
+import WaitingRoom from "./Pages/WaitingRoom/WaitingRoom";
+import BookingReviewLoading from "./Pages/BookAndReview/BookingReviewLoading";
 export default class App extends Component {
   render() {
     return (
@@ -22,7 +24,12 @@ export default class App extends Component {
         <Route path="/patient/signup" component={SingupPage} />
         <Route path="/doctor/login" component={DoctorLogin} />
         <Route path="/auth/forget" component={ForgetPasswordPage} />
+        <Route path="/waiting-room" component={WaitingRoom} />
         <Route path="/booking/review-booking" component={BookAndReviewPage} />
+        <Route
+          path="/booking/review-booking-loading"
+          component={BookingReviewLoading}
+        />
 
         <Footer />
       </div>
